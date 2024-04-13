@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - catalog-service/**
+      - deployment/docker-compose/**
     branches:
       - '**'
 jobs:
