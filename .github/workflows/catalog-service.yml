@@ -12,6 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       working-directory: ./catalog-service
+      docker-file: ./deployment/docker-compose/infra.yml  
     defaults:
       run:
         working-directory: ${{ env.working-directory }}
@@ -19,7 +20,7 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v4
       - name: Run docker compose
-        run: docker compose -f infra.yml up -d
+        run: docker compose -f ${{env.docker-file}} up -d
 
       - name: Setup Java 21
         uses: actions/setup-java@v4
