@@ -5,7 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b7fd49cc-7b6b-4e68-8727-a0940dbaebe3" name="Changes" comment="Added files">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/src/main/java/com/example/catalog/domain/PagedResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/src/main/java/com/example/catalog/domain/ProductEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/src/main/java/com/example/catalog/domain/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/src/main/java/com/example/catalog/domain/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/src/main/java/com/example/catalog/web/controllers/ProductsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.github/workflows/catalog-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/catalog-service.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog-service/src/main/java/com/example/catalogservice/CatalogServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-service/src/main/java/com/example/catalog/CatalogServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog-service/src/test/java/com/example/catalogservice/CatalogServiceApplicationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-service/src/test/java/com/example/catalog/CatalogServiceApplicationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog-service/src/test/java/com/example/catalogservice/ContainersConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-service/src/test/java/com/example/catalog/ContainersConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog-service/src/test/java/com/example/catalogservice/TestCatalogServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-service/src/test/java/com/example/catalog/TestCatalogServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deployment/docker-compose/infra.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CatalogServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CatalogServiceApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,10 +32,16 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Record" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -39,7 +61,9 @@
   &quot;associatedIndex&quot;: 1
 }</component>
   <component name="ProjectId" id="2f3dQcCwzPwACDSW4Q9tF4kEDiR" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -50,24 +74,28 @@
     "Application.TestCatalogServiceApplication.executor": "Run",
     "JUnit.CatalogServiceApplicationTest.contextLoads.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "ci/cd-integration",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/syedmohsin/dev-spring-boot/spring-boot-microservices",
+    "last_opened_file_path": "/home/syedmohsin/dev-spring-boot/spring-boot-microservices/deployment/docker-compose",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/deployment/docker-compose" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunManager" selected="Application.CatalogServiceApplication">
     <configuration name="CatalogServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.catalogservice.CatalogServiceApplication" />
+      <option name="MAIN_CLASS_NAME" value="com.example.catalog.CatalogServiceApplication" />
       <module name="catalog-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.catalogservice.*" />
+          <option name="PATTERN" value="com.example.catalog.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -76,11 +104,11 @@
       </method>
     </configuration>
     <configuration name="TestCatalogServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.catalogservice.TestCatalogServiceApplication" />
+      <option name="MAIN_CLASS_NAME" value="com.example.catalog.TestCatalogServiceApplication" />
       <module name="catalog-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.catalogservice.*" />
+          <option name="PATTERN" value="com.example.catalog.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -92,12 +120,12 @@
       <module name="catalog-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.catalogservice.*" />
+          <option name="PATTERN" value="com.example.catalog.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.catalogservice" />
-      <option name="MAIN_CLASS_NAME" value="com.example.catalogservice.CatalogServiceApplicationTest" />
+      <option name="MAIN_CLASS_NAME" value="com.example.catalog.CatalogServiceApplicationTest" />
       <option name="METHOD_NAME" value="contextLoads" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -153,7 +181,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713040611473</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added files">
+      <option name="closed" value="true" />
+      <created>1713040981163</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1713040981163</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
