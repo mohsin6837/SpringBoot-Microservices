@@ -6,7 +6,7 @@ create table products
     code        text not null unique,
     name        text not null,
     description text,
-    imageUrl   text,
+    image_url   text,
     price       numeric not null,
     primary key (id)
 );

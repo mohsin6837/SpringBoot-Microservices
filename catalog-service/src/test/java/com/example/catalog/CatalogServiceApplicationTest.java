@@ -1,10 +1,8 @@
 package com.example.catalog;
 
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
-public class CatalogServiceApplicationTest {
+public class CatalogServiceApplicationTest extends AbstractIT {
     @Test
     void contextLoads() {}
 }

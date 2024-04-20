@@ -3,9 +3,10 @@ package com.example.catalog.domain;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.DecimalMin;
 import jakarta.validation.constraints.NotEmpty;
-
 import java.math.BigDecimal;
 
+@Table(name = "products")
+@Entity
 public class ProductEntity {
 
     @Id
@@ -22,8 +23,8 @@ public class ProductEntity {
     private String name;
 
     private String description;
-    @Column(name = "image_url")
 
+    @Column(name = "image_url")
     private String imageUrl;
 
     @Column(nullable = false)
@@ -31,9 +32,7 @@ public class ProductEntity {
     @DecimalMin(value = "0.1")
     private BigDecimal price;
 
-    public ProductEntity() {
-
-    }
+    public ProductEntity() {}
 
     public ProductEntity(String code, String name, String description, String imageUrl, BigDecimal price) {
         this.code = code;

@@ -1,12 +1,11 @@
 package com.example.catalog.web.controllers;
 
 import com.example.catalog.domain.PagedResult;
-import com.example.catalog.domain.ProductEntity;
+import com.example.catalog.domain.Product;
+import com.example.catalog.domain.ProductNotFoundException;
 import com.example.catalog.domain.ProductService;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/products")
@@ -19,7 +18,15 @@ public class ProductsController {
     }
 
     @GetMapping
-    public PagedResult<ProductEntity> getProducts(@RequestParam(name = "page", defaultValue = "1") int pageNo) {
+    public PagedResult<Product> getProducts(@RequestParam(name = "page", defaultValue = "1") int pageNo) {
         return productsService.getProducts(pageNo);
+    }
+
+    @GetMapping("/{code}")
+    public ResponseEntity<Product> getProductByCode(@PathVariable String code) {
+        return productsService
+                .getProductByCode(code)
+                .map(ResponseEntity::ok)
+                .orElseThrow(() -> ProductNotFoundException.forCode(code));
     }
 }
