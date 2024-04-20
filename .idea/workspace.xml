@@ -5,7 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b7fd49cc-7b6b-4e68-8727-a0940dbaebe3" name="Changes" comment="Added files">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/catalog-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/catalog-service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/src/main/java/com/example/catalog/ApplicationProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/src/main/java/com/example/catalog/domain/ProductMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/src/main/java/com/example/catalog/domain/ProductNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/src/main/java/com/example/catalog/web/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/src/test/java/com/example/catalog/AbstractIT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/src/test/java/com/example/catalog/domain/ProductRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/src/test/java/com/example/catalog/web/controllers/ProductsControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalog-service/src/test/resources/test-data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog-service/src/main/java/com/example/catalog/CatalogServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-service/src/main/java/com/example/catalog/CatalogServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog-service/src/main/java/com/example/catalog/domain/PagedResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-service/src/main/java/com/example/catalog/domain/PagedResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog-service/src/main/java/com/example/catalog/domain/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-service/src/main/java/com/example/catalog/domain/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog-service/src/main/java/com/example/catalog/domain/ProductEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-service/src/main/java/com/example/catalog/domain/ProductEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog-service/src/main/java/com/example/catalog/domain/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-service/src/main/java/com/example/catalog/domain/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog-service/src/main/java/com/example/catalog/domain/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-service/src/main/java/com/example/catalog/domain/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog-service/src/main/java/com/example/catalog/web/controllers/ProductsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-service/src/main/java/com/example/catalog/web/controllers/ProductsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog-service/src/main/resources/db/migration/V1__create_products_table.sql" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-service/src/main/resources/db/migration/V1__create_products_table.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog-service/src/test/java/com/example/catalog/CatalogServiceApplicationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-service/src/test/java/com/example/catalog/CatalogServiceApplicationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,11 +34,18 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Record" />
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -39,7 +65,9 @@
   &quot;associatedIndex&quot;: 1
 }</component>
   <component name="ProjectId" id="2f3dQcCwzPwACDSW4Q9tF4kEDiR" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -49,38 +77,46 @@
     "Application.CatalogServiceApplication.executor": "Run",
     "Application.TestCatalogServiceApplication.executor": "Run",
     "JUnit.CatalogServiceApplicationTest.contextLoads.executor": "Run",
+    "JUnit.ProductRepositoryTest.executor": "Run",
+    "JUnit.ProductRepositoryTest.shouldGetAllProducts.executor": "Run",
+    "JUnit.ProductsControllerTest.shouldReturnProducts.executor": "Run",
+    "Maven.catalog-service [org.springframework.boot:spring-boot-maven-plugin:3.2.4:build-image].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "ci/cd-integration",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/syedmohsin/dev-spring-boot/spring-boot-microservices",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "last_directory_selection": "/home/syedmohsin/dev-spring-boot/spring-boot-microservices/catalog-service/src/main/java/com/example/catalog/web",
+    "last_opened_file_path": "/home/syedmohsin/dev-spring-boot/spring-boot-microservices/deployment/docker-compose",
+    "settings.editor.selected.configurable": "preferences.sourceCode.Java"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/deployment/docker-compose" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.catalog" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.example.catalog.domain" />
+      <recent name="com.example.catalog.web.controllers" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.CatalogServiceApplication">
+  <component name="RunManager" selected="JUnit.ProductRepositoryTest">
     <configuration name="CatalogServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.catalogservice.CatalogServiceApplication" />
+      <option name="MAIN_CLASS_NAME" value="com.example.catalog.CatalogServiceApplication" />
       <module name="catalog-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.catalogservice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestCatalogServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.catalogservice.TestCatalogServiceApplication" />
-      <module name="catalog-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.catalogservice.*" />
+          <option name="PATTERN" value="com.example.catalog.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -92,13 +128,60 @@
       <module name="catalog-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.catalogservice.*" />
+          <option name="PATTERN" value="com.example.catalog.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.catalogservice" />
-      <option name="MAIN_CLASS_NAME" value="com.example.catalogservice.CatalogServiceApplicationTest" />
+      <option name="MAIN_CLASS_NAME" value="com.example.catalog.CatalogServiceApplicationTest" />
       <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="catalog-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.catalog.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.catalog.domain" />
+      <option name="MAIN_CLASS_NAME" value="com.example.catalog.domain.ProductRepositoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductRepositoryTest.shouldGetAllProducts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="catalog-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.catalog.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.catalog.domain" />
+      <option name="MAIN_CLASS_NAME" value="com.example.catalog.domain.ProductRepositoryTest" />
+      <option name="METHOD_NAME" value="shouldGetAllProducts" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductsControllerTest.shouldReturnProducts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="catalog-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.catalog.web.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.catalog.web.controllers" />
+      <option name="MAIN_CLASS_NAME" value="com.example.catalog.web.controllers.ProductsControllerTest" />
+      <option name="METHOD_NAME" value="shouldReturnProducts" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -106,9 +189,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ProductRepositoryTest" />
         <item itemvalue="Application.CatalogServiceApplication" />
+        <item itemvalue="JUnit.ProductRepositoryTest.shouldGetAllProducts" />
+        <item itemvalue="JUnit.ProductsControllerTest.shouldReturnProducts" />
         <item itemvalue="JUnit.CatalogServiceApplicationTest.contextLoads" />
-        <item itemvalue="Application.TestCatalogServiceApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -153,7 +238,23 @@
       <option name="project" value="LOCAL" />
       <updated>1713040611473</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added files">
+      <option name="closed" value="true" />
+      <created>1713040981163</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1713040981163</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added files">
+      <option name="closed" value="true" />
+      <created>1713536229452</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1713536229452</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
