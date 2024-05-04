@@ -1,4 +1,4 @@
-name: Catalog Service
+name: Order Service
 
 on:
   push:
@@ -13,16 +13,13 @@ jobs:
     runs-on: ubuntu-latest
     env:
       working-directory: ./order-service
-      docker-file: infra.yml
-      DOCKER_IMAGE_NAME: ${{ secrets.DOCKERHUB_USERNAME }}/bookstore-order-service
+      DOCKER_IMAGE_NAME: ${{ secrets.DOCKER_HUB_USERNAME }}/bookstore-order-service
     defaults:
       run:
         working-directory: ${{ env.working-directory }}
     steps:
       - name: Check out code
         uses: actions/checkout@v4
-      - name: Run docker compose
-        run: docker compose -f ${{env.docker-file}} up -d
 
       - name: Setup Java 21
         uses: actions/setup-java@v4

@@ -1,0 +1,27 @@
+{"properties": [
+  {
+    "name": "orders.order-events-exchange",
+    "type": "java.lang.String",
+    "description": "A description for 'orders.order-events-exchange'"
+  },
+  {
+    "name": "orders.errors-orders-queue",
+    "type": "java.lang.String",
+    "description": "A description for 'orders.errors-orders-queue'"
+  },
+  {
+    "name": "orders.cancelled-orders-queue",
+    "type": "java.lang.String",
+    "description": "A description for 'orders.cancelled-orders-queue'"
+  },
+  {
+    "name": "orders.delivered-orders-queue",
+    "type": "java.lang.String",
+    "description": "A description for 'orders.delivered-orders-queue'"
+  },
+  {
+    "name": "orders.new-orders-queue",
+    "type": "java.lang.String",
+    "description": "A description for 'orders.new-orders-queue'"
+  }
+]}
